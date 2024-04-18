@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  --Green: hsl(75, 94%, 57%);
+
+
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+}
+
+.container {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.625rem;
+
+
+}
+
+
+
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+
+  font-family: "Inter", sans-serif;
+}
+
+@media (min-width:48rem) {
+  .container {
+    width: 46.875rem;
+  }
+
+}
+
+
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1f1f1f;
+  padding: 2.5rem;
+  border-radius: 1.25rem;
+}
+
+main .container .img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+
+}
+
+main .container .img img {
+  max-width: 40%;
+  border-radius: 50%;
+
+
+
+}
+
+
+
+
+main .container .main-title {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+main .container .main-title h1 {
+  color: var(--White);
+  font-size: 1.5625rem;
+  margin-bottom: 0.3125rem;
+
+}
+
+main .container .main-title h2 {
+  color: var(--Green);
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+}
+
+main .container .main-title p {
+  color: var(--White);
+  font-size: 0.875rem;
+}
+
+
+main .container .links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+
+}
+
+main .container .links button {
+  outline: none;
+  border: none;
+  background-color: #333333;
+  color: var(--White);
+  padding: 0.9375rem;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  font-weight: 700;
+
+
+}
+
+main .container .links button:hover {
+  background-color: var(--Green);
+  color: var(--Grey);
+}
